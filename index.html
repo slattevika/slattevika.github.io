@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hei</title>
+    <style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
+
     <h1>Hei</h1>
     <p>Hei Verden i F#</p>
 
     <script src="https://gist.github.com/runerei/ef9f5cb3f9497c7682f880198de67ac1.js"></script>
+
+    <label for="darkToggle">Mørkre av/på</label>
+    <input type="checkbox" id="darkToggle" onclick="toggleDarkMode()">
+    <script>
+        function toggleDarkMode() {
+            const element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
     
 </body>
 </html>
